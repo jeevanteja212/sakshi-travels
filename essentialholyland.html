@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {box-sizing: border-box}
+body {font-family: "Lato", sans-serif;}
+
+/* Style the tab */
+.tab {
+    float: left;
+    border: 1px solid #ccc;
+    background-color: #f1f1f1;
+    width: 30%;
+    height: 300px;
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+    display: block;
+    background-color: inherit;
+    color: black;
+    padding: 22px 16px;
+    width: 100%;
+    border: none;
+    outline: none;
+    text-align: left;
+    cursor: pointer;
+    transition: 0.3s;
+    font-size: 17px;
+} 
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+    background-color: #ddd;  
+}
+
+/* Create an active/current "tab button" class */    
+.tab button.active {
+    background-color: red;
+}
+
+/* Style the tab content */
+.tabcontent {
+    float: left;
+    padding: 0px 12px;
+    border: 1px solid #ccc;
+    width: 70%;
+    border-left: none;
+    height: 100%;
+}
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+tr:nth-child(even) {
+    background-color: #dddddd;
+}
+</style>
+</head>
+<body>
+<div class="tab">
+  <button class="tablinks" onclick="openCity(event, 'Photos')" id="defaultOpen">Photos 
+</button>
+  <button class="tablinks" onclick="openCity(event, 'Itinerary')">Itinerary</button>
+  <button class="tablinks" onclick="openCity(event, 'Accommodation Details')">Accommodation Details</button>
+  <button class="tablinks" onclick="openCity(event, 'Price')">Price</button>
+  <button class="tablinks" onclick="openCity(event, 'Inclusions & Exclusions')">Inclusions & Exclusions</button>
+  <button class="tablinks" onclick="openCity(event, 'Terms & Conditions')">Terms & Conditions</button>
+  </div>
+
+
+  <div id="Photos" class="tabcontent">
+  <h3>Photos</h3>
+  <div class="w3-content w3-display-container">
+  <img class="mySlides" src="images\packages pictures\holyland\holyland-4.jpg" width="900px" height="500px">
+  <img class="mySlides" src="images\packages pictures\holyland\holyland-2.jpg" width="900px" height="500px">
+  <img class="mySlides" src="images\packages pictures\holyland\holyland-3.jpg" width="900px" height="500px">
+  <img class="mySlides" src="images\packages pictures\holyland\holyland-5.jpg" width="900px" height="500px">
+
+  <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+  <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+</div>
+
+<script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");             
+  if (n > x.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";  
+  }
+  x[slideIndex-1].style.display = "block";  
+}
+</script>
+
+
+</div>
+
+<div id="Itinerary" class="tabcontent">    
+  <h3>Itinerary</h3>
+  <p><b>Day 1: Cochin –Amman</b></p>
+
+Arrive at Amman (Jordan) Emigration Formalities .Lunch at Restaurant Proceed to Mount Nebo : The trip south of Amman along the 5,000 years old King’s Highway is one of the most memorable journeys in the Holy Land, passing through a string of ancient sites of Jordan, the memorial of Moses, and the presumed site of the prophet's death and burial place. From a platform in front of the church one can enjoy a breathtaking view across the Jordan Valley and the Dead Sea. Lunch and Amman City Tour and free time for Shopping. Proceed to Hotel. Dinner, Overnight at Hotel in Amman.
+
+
+
+
+<p><b>Day 2: Amman - Nazareth</b></p>
+
+After Breakfast, Check out Hotel Proceed to Sheik Hussein Bridge to cross the border(02 Hrs 30 min). Complete the customs & emigration formalities. Enter into Israel. Then Visit Nazareth the boyhood town of Jesus and home of Mary and Joseph and visit the Basilica of the Annunciation built over the grotto where Archangel Gabriel appeared to announce that she would bear a son, Jesus. We also stop by Joseph's workshop Then Visit Cana where Jesus performed his first Miracle, changing water into wine at the wedding feast. Dinner & overnight at hotel in Nazereth.
+
+
+
+
+<p><b>Day 3: Sea of Galilee – Capernaum – Jordan river - Bethlehem</b></p>
+
+After Breakfast, Visit Mount Tabor. Visit Capernaum - the centre of Jesus' ministry after he left Nazareth we stop at Tabgha - the Church of the Multiplication of the Five Loaves and Two Fishes and the expressive church of the Beatitudes, where Jesus gave the Sermon on the Mount. This morning we drive through the landscapes of Galilee and later for a ride in a replica of a Galilean fishing boat of that time, on the Sea of Galilee and where Jesus calmed the storm and walked on the water. We make a stop at St. Peter's house, the Church of Primacy of Peter and the place where Jesus bestowed St. Peter with his authority. This is believed to be the place where Jesus dined with his disciples, the flat rock known as Mensa Christy, Chris's table to commemorate this event. Visit Yardenit on the Jordan River, the traditional Baptismal site.Dinner & Overnight at Bethlehem.
+
+
+
+
+
+<p><b>Day 4: Mount of Olives – Gethsemane - Jericho – Dead Sea</b></p>
+
+After Breakfast. Then proceed to Visit Birth place of John the Baptist (Ein Karem), Up next Atop the Mount of Olives opposite Jerusalem in Israel are the Church of the Ascension and the Chapel of the Ascension, walk to the  The Church of the Pater Noster is a Roman Catholic church located on the Mount of Olives in Jerusalem. & Dominus flevit , While walking you will pass through the Palm Sunday road & Garden of Gethsemane. Also visit Mary’s Tomb, Place of Last supper, Tomb of David, Peter in Gallicantu, Lunch at restaurant then aftar that Proceed to Jericho (40 Min. drive). Have a Panoramic view of – Mt. of Temptation. Sycamore tree.Float in Dead sea (1 Hr).Tomb of Lazarus.Dinner & Overnight at Bethlehem.
+
+
+<p><b>Day 5: Old City of Jerusalem - Bethlehem</b></p>
+
+After Breakfast. Then proceed to the pools of Beit Hasda, where Jesus held the crippled man. And from there we take the Via Dolorosa (Way of Grief), traditionally accepted as the last route trodden by Jesus. Follow the 14 Stations of the Cross to Golgotha, the place where Jesus was crucified marking significant events along the route.Then we go to to the Wailing Wall, which is the holiest place for the Jewish religion. After this have  Lunch at restaurant .Then proceed to Bethlehem to visit the shepherd’s field, which is located in the Judah province. It was here that the Angel announced the birth of Jesus to the shepherds of Bethlehem during the reign of King Herod. Also, here David tended his flocks until he was anointed King of Israel.We then visit the Church of Nativity - the birthplace of Jesus and the City of David, Manager Square; Crusaders Cloister Grotto of St. Jerome. Then we visit Milk Grotto. Dinner and overnight Bethlehem.
+
+
+
+
+
+<p><b>Day 6: Bethlehem - Taba</b></p>
+
+After breakfast, Check-out Hotel. Proceed to Taba. (5 hours drive) Arrive Taba. On the way visit Statue of Lot’s wife . Finish the Customs and Emigration formalities at the Israel side. Enter into Egypt. Complete the emigration and customs formalities. Check-in hotel. Lunch at Hotel Restaurant after Lunch Free Time, Enjoy Red Sea resort.Dinner and Overnight at hotel in Taba.
+
+
+
+<p><b>Day 7: Sinai – Cairo</b></p>
+
+Breakfast at hotel. Check-out Hotel. Then proceed to Sinai. View the beautiful and historical Sinai Mountains. Visit St. Catherine Monastery. Set beneath the mountain where Moses is said to have received the Ten Commandments. Saint Catherine Monastery has been one of the world’s great centers of religious pilgrimage for over fifteen centuries.Within its imposing walls rests a citadel like no other, incredibly rich in important religious and historical structures. Among its treasures is a library of ancient manuscripts and icons second only to the Vatican's itself, and a 6th century church reputed to lie directly on the site of the Burning Bush. Quite simply, the monastery is a defining feature of the Holy Land. Proceed to Cairo. Lunch at restaurant. On the way to Cairo we cross the famous Suez Canal. Arrive Cairo Overnight at Hotel in Cairo. 
+
+
+
+<p><b>Day 8: Cairo</b></p>
+
+After Breakfast. Then Proceed to the old churches of Cairo the oldest in Egypt originally Then the Visit Egyptian Museum. The Museum holds the largest and finest collection of Antiquities from old middle and new kingdoms as well as the late period also the collection of King Tutankhamen in a private wing , view the Cairo Tower Built in 1962 Egypt tallest structure at 187m. After this visit to Pyramids, The Great Pyramid of Giza (also called the Pyramid of Khufu and the Pyramid of Cheops) is the oldest and largest of the three pyramids in the Giza Necropolis bordering what is now El Giza, Egypt, and in a historical irony is the oldest of the Seven Wonders of the Ancient World and the only one that survives substantially intact. It is believed the pyramid was built as a tomb for fourth dynasty Egyptian Pharaoh Khufu (Cheops in Greek) and constructed over a 20 year period concluding around 2551 BC. The Great Pyramid was the tallest man-made structure in the world for over 3,800 years Sphinx. Then Lunch. Proceeds to Cruising on the River Nile. Dinner on board. Enjoy the Shows on board Transfer to Hotel. Overnight at Cairo.
+
+
+<p><b>Day 9: Cairo - Departure</b></p>
+
+After Breakfast check out hotel Proceed to the Cairo Airport for final departure to Cochin.
+
+
+
+</div>
+
+<div id="Accommodation Details" class="tabcontent">
+  <h3>Accommodation Details</h3>
+  <table>
+  <tr>
+    <th>City </th>
+    <th>Standard</th>
+    
+  </tr>
+
+  <tr>
+    <td>Amman ,Jordan</td>
+    <td>Standard Hotel</td>
+    
+
+    </tr>
+
+    <tr>
+    <td>Bethlehem</td>
+    <td>Standard Hotel</td>
+    
+
+    </tr>
+    <tr>
+    <td>Cairo, Egypt</td>
+    <td>Standard Hotel</td>
+    
+
+    </tr>
+
+    <tr>
+    <td>Nazareth, Israel</td>
+    <td>Standard Hotel</td>
+    
+
+    </tr>
+    <tr>
+    <td>Taba, Qesm Nwebaa, Egypt</td>
+    <td>Standard Hotel</td>
+    
+
+    </tr>
+</table>
+
+  </div>
+<div id="Price" class="tabcontent">
+  <h3>Price Per Person in Indian Rupees</h3>
+  
+
+  </div>
+<div id="Inclusions & Exclusions" class="tabcontent">
+  <h3>Inclusions</h3>
+  <ul>
+  
+  <li>Return Economy Class Air Fare Ex. Cochin</li><br>
+  <li>1 night accommodation in Amman</li><br>
+  <li>1 night accommodation in Nazreth / Tiberias</li><br>
+  <li>3 nights’ accommodation in Bethlehem</li><br>
+  <li>1 night accommodation in Taba</li><br>
+  <li>2 nights accommodation in Cairo</li><br>
+  <li>Tips to Guide & Driver</li><br>
+  <li>Breakfast, Lunch & Dinner</li><br>
+  <li>Sightseeing as mentioned in the itinerary</li><br>
+  <li>All entrance fees included in Israel, Egypt & Amman</li><br>
+  <li>Luxury a/c coach with English speaking govt. licensed guide</li><br>
+  <li>Israel, Egypt & Jordan Visa</li><br>
+  <li>Israel, Egypt & Jordan Border taxes</li><br>
+  <li>Tour Manager from Sakshi Travels Manager</li><br>
+  <li>Travel Insurance upto 70 Yrs Indian Nationals only</li><br>
+  <li>All Applicable Taxes incl.  GST</li>
+<h3>Exclusions</h3>
+  
+  <li>The cost of Passport</li><br>
+  <li>Additional meals other than specified in the itinerary and also food & drinks not forming part of group menus., Laundry, beverages, telephone charges</li><br>
+    <li>Anything which is not included in the cost includes.</li>
+</ul>
+  </div>
+<div id="Terms & Conditions" class="tabcontent">
+  <h3>Terms & Conditions</h3>
+  <ul>
+  <li>All passengers must travel together on the outbound journey. Changes in return journey dates are subject to confirmation Hotel / Flight price subject to change with / without notice. Subject to RBI regulations. BTQ Passengers only.</li>
+  <li>All passengers will be staying in Twin Sharing basis.</li>
+  <li>Travelling in Luxury Volvo Busses.</li>
+  <li>Child below 12 years will be staying in a triple sharing room.</li>
+  <li>Cap, Id Card & Bag will be provided to all the Pax.</li><br><br>
+  <li><b>Conditions:</b>
+
+A non-refundable deposit of Rs.40, 000/- has to paid at the time of booking. Balance amount should be paid 25 days prior to the departure.
+</ul>
+</div>
+
+<script>
+function openCity(evt, cityName) {
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+    }
+    tablinks = document.getElementsByClassName("tablinks");
+    for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+    document.getElementById(cityName).style.display = "block";
+    evt.currentTarget.className += " active";
+}
+
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+</script>
+     
+</body>
+</html> 

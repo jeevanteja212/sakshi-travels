@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {box-sizing: border-box}
+body {font-family: "Lato", sans-serif;}
+
+/* Style the tab */
+.tab {
+    float: left;
+    border: 1px solid #ccc;
+    background-color: #f1f1f1;
+    width: 30%;
+    height: 300px;
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+    display: block;
+    background-color: inherit;
+    color: black;
+    padding: 22px 16px;
+    width: 100%;
+    border: none;
+    outline: none;
+    text-align: left;
+    cursor: pointer;
+    transition: 0.3s;
+    font-size: 17px;
+} 
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+    background-color: #ddd;  
+}
+
+/* Create an active/current "tab button" class */    
+.tab button.active {
+    background-color: red;
+}
+
+/* Style the tab content */
+.tabcontent {
+    float: left;
+    padding: 0px 12px;
+    border: 1px solid #ccc;
+    width: 70%;
+    border-left: none;
+    height: 100%;
+}
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+tr:nth-child(even) {
+    background-color: #dddddd;
+}
+</style>
+</head>
+<body>
+<div class="tab">
+  <button class="tablinks" onclick="openCity(event, 'Photos')" id="defaultOpen">Photos 
+</button>
+  <button class="tablinks" onclick="openCity(event, 'Itinerary')">Itinerary</button>
+  <button class="tablinks" onclick="openCity(event, 'Accommodation Details')">Accommodation Details</button>
+  <button class="tablinks" onclick="openCity(event, 'Price')">Price</button>
+  <button class="tablinks" onclick="openCity(event, 'Inclusions & Exclusions')">Inclusions & Exclusions</button>
+  <button class="tablinks" onclick="openCity(event, 'Terms & Conditions')">Terms & Conditions</button>
+  </div>
+
+
+  <div id="Photos" class="tabcontent">
+  <h3>Photos</h3>
+  <div class="w3-content w3-display-container">
+  <img class="mySlides" src="images\packages pictures\holyland\holyland-2.jpg" width="900px" height="500px">
+  <img class="mySlides" src="images\packages pictures\holyland\holyland-6.jpg" width="900px" height="500px">
+  <img class="mySlides" src="images\packages pictures\holyland\holyland-7.jpg" width="900px" height="500px">
+  <img class="mySlides" src="images\packages pictures\holyland\holyland-8.jpg" width="900px" height="500px">
+
+  <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+  <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+</div>
+
+<script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");             
+  if (n > x.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";  
+  }
+  x[slideIndex-1].style.display = "block";  
+}
+</script>
+
+
+</div>
+
+<div id="Itinerary" class="tabcontent">    
+  <h3>Itinerary</h3>
+  <p><b>Day 1: Amman - Nazareth</b></p>
+
+Arrive in Amman. Meet by our representative. Then. Proceed to Mount Nebo : The trip south of Amman along the 5,000 years old King’s Highway is one of the most memorable journeys in the Holy Land, passing through a string of ancient sites of Jordan, the memorial of Moses, and the presumed site of the prophet's death and burial place. From a platform in front of the church one can enjoy a breathtaking view across the Jordan Valley Proceed to Shaikh Hussein Border. Complete the customs & emigration formalities. Enter into Israel. Proceed to Hotel. Dinner, Overnight at Hotel in Nazareth.
+
+
+<p><b>Day 2: Nazareth - Cana - Sea of Galilee–Capernaum Jordan Rivers - Mount Tabor</b></p>
+
+After Breakfast. Visit Capernaum - the centre of Jesus' ministry after he left Nazareth we stop at Tabgha - the Church of the Multiplication of the Five Loaves and Two Fishes and the expressive church of the Beatitudes, where Jesus gave the Sermon on the Mount.  This morning we drive through the landscapes of Galilee and later for a ride in a replica of a Galilean fishing boat of that time, on the Sea of Galilee and where Jesus calmed the storm and walked on the water. We make a stop at St. Peter's house, the Church of Primacy of Peter and the place where Jesus bestowed St. Peter with his authority.  This is believed to be the place where Jesus dined with his disciples, the flat rock known as Mensa Christy, Chris's table to commemorate this event.  Then Visit Cana where Jesus performed his first Miracle, changing water into wine at the wedding feast... Then Visit Nazareth the boyhood town of Jesus and home of Mary and Joseph and visit the Basilica of the Annunciation built over the grotto where Archangel Gabriel appeared to announce that she would bear a son, Jesus.  We also stop by Joseph's workshop Visit Mount Tabor Visit Yardenit on the Jordan River, the traditional Baptismal site. Dinner.  Overnight at hotel in Nazareth.
+
+
+<p><b>Day 3: Nazareth – Haifa - Mt. Carmel - Bethlehem</b></p>
+
+After Breakfast, Check-out Hotel Proceed to Haifa, Israel's largest port city, built on the slopes of Mt. Carmel. Visit the Famous Persian Hanging Gardens for a view of the Bahai Shrine. Then make a brief halt at the "Home of Eujoh", and then continue to Muhraqa, Visit Mount Carmel. The placer of sacrifice and the site where Prophet Elijah defeated the False Prophets of Ba'al. Continue via the city of Caesarea to Lunch at Restaurant Proceed to Joppa (Tel Aviv) Visit St. Peter Church. View the beautiful Mediterranean Sea. Proceed to Bethlehem. Check in hotel. Dinner. Overnight at Hotel in Bethlehem.
+
+
+
+
+
+<p><b>Day 4: Bethlehem - Old City of Jerusalem – Golgotha – Wailing Wall - Jericho - Dead Sea - Bethlehem</b></p>
+
+After Breakfast. Then proceed to the pools of Beit Hasda, where Jesus held the crippled man. And from there we take the Via Dolorosa (Way of Grief), traditionally accepted as the last route trodden by Jesus.  Follow the 14 Stations of the Cross to Golgotha, the place where Jesus was crucified marking significant events along the route.  You will see the Pilate's Judgments Hall, the Chapel of the Flagellation where according to tradition, the Roman soldiers scourged Jesus and placed a crown of thorns on His head the Ecce Homo Arch and the Convent of the Sisters of Zion.  Early tradition held that Pontius Pilate stood here and thundered "Ecce Homo!"  Which means "Behold the man?"  Which is what Pilate said when he presented Jesus to the crowd.  However, we now know that pagan Emperor Hadrian constructed the arch.  Below the Convent are the Lithotrities where Jesus was publicly tried and where the Roman soldiers mocked him.  The last 5 Stations of the Cross are inside the Church of the Holy Sepulcher visible from the distance with two silver domes.  Also "The Tomb" widely believed to be the part of the stone that covered Jesus Tomb. Visit the Cenacle – Last Supper Room, the tomb of King David and – (the other upper room). Proceed to Jerico Then. Lunch at Restaurant and visit   (Qurantal) of the traditional Mount of Temptation and Sycamore Tree it is also the place where Jesus stopped on this way to Jerusalem, on the Eve of the Passover and were Jesus cured the blind man during his stay at Zachaeus house. Lunch. Lunch. Proceed to Dead Sea, the lowest point on earth (1305 ft. below sea level), again make a brief stop at a private beach and take the opportunity to float in the salty buoyant water, rich in minerals.  Precede to Bithynia .Visit Bethany the Town of Mary, Martha and Lazarus. Visit Lazarus’s Tomb. Then we go to the Jewish quarter to the Wailing Wall, which is the holiest place for the Jewish religion. Back to hotel. Dinner and overnight at hotel.
+
+<p><b>Day 5: Bethlehem - Ein Karem - Mount of Olives - Gethsemane- Bethlehem</b></p>
+
+Breakfast. Visit Ein Karem, located in the hills next to a little spring. This is the city of Judah and Birthplace of John the Baptist, son of Elizabeth & Zechariah and the Church of Visitation. Proceed to Mount of Olives for a panoramic view of Jerusalem. Visit sanctuaries of Pater Nester Ascension. Walk along the Palm Sunday road down to the chapel of Dorminous Flevit where Jesus wept over eminent destruction of Jerusalem and Garden of Gethsemane.  Where Jesus prayed while Judah betrayed him to the Romans. Visit the Basilica of agony and Tomb of St. Mary. We also will visit the Church of St. Peter of Gallicantu, which symbolizes Peter's Denial of Jesus as he has prophesied at the Last Supper and then visit the traditional house of high priest, Caiaphas, where Jesus was imprisoned. Then proceed to Bethlehem to visit the shepherd’s field, which is located in the Judah province. It was here that the Angel announced the birth of Jesus to the shepherds of Bethlehem during the reign of King Herod.  Also, here David tended his flocks until he was anointed King of Israel. Lunch.  We then visit the Church of Nativity - the birthplace of Jesus and the City of David, Manager Square; Crusaders Cloister Grotto of St. Jerome. Then we visit Milk Grotto. Dinner and overnight at Bethlehem.
+
+
+
+<p><b>Day 6: Bethlehem - Taba</b></p>
+
+After breakfast, Check-out Hotel. Proceed to Taba. Finish the Customs and Emigration formalities at the Israel side. Enter into Egypt. Complete the emigration and customs formalities. Check-in hotel. Free Time Dinner and Overnight at hotel in Taba.
+
+
+
+<p><b>Day 7: Taba – Sinai - St. Catherine Monastery – Cairo</b></p>
+
+Breakfast at hotel. Check-out Hotel. Then proceed to Sinai. View the beautiful and historical Sinai Mountains. Visit St. Catherine Monastery. Set beneath the mountain where Moses is said to have received the Ten Commandments.  Saint Catherine Monastery has been one of the world’s great centers of religious pilgrimage for over fifteen centuries. Within its imposing walls rests a citadel like no other, incredibly rich in important religious and historical structures. Among its treasures is a library of ancient manuscripts and icons second only to the Vatican's itself, and a 6th century church reputed to lie directly on the site of the Burning Bush. Quite simply, the monastery is a defining feature of the Holy Land.  Proceed to Cairo. Lunch at restaurant.  On the way to Cairo we cross the famous Suez Canal.  Arrive Cairo then Cairo Market Visit free time shopping precedes Hotel check in Hotel Overnight at Hotel.
+
+<p><b>Day 8: Cairo – City sightseeing - Dubai</b></p>
+
+After Breakfast, Check-out hotel. Proceed on a visit to Pyramids, The Great Pyramid of Giza (also called the Pyramid of Khufu and the Pyramid of Cheops) is the oldest and largest of the three pyramids in the Giza Necropolis bordering what is now El Giza, Egypt, and in a historical irony is the oldest of the Seven Wonders of the Ancient World and the only one that survives substantially intact. It is believed the pyramid was built as a tomb for fourth dynasty Egyptian Pharaoh Khufu (Cheops in Greek) and constructed over a 20 year period concluding around 2551 BC. The Great Pyramid was the tallest man-made structure in the world for over 3,800 years Sphinx and the old churches of Cairo. Visit Egyptian Museum. Lunch. Proceeds to Cruising on the River Nile. Dinner on board. Proceed to Cairo airport for flight to Dubai.
+
+
+<p><b>Day 9: Cairo – Dubai, Dubai Dow Cruise</b></p>
+
+Arrive in Dubai and Meet by our representative and proceed to Hotel Check –in free time. Later in the evening proceed to for Dhow Cruise. Discover the true beauty of Dubai while aboard a traditionally decorated wooden dhow (cabin cruise), as it sails along the Dubai creek under the moonlight. The major Dubai landmarks shine through the moonlit sky as the wooden vessel slips silently across the creek. This unforgettable romantic evening cruise includes a buffet dinner of either continental or oriental cuisine, along with soft drinks, traditional coffee, and mineral water. The tour also normally contains various sorts of entertainment and traditional Arabic background music. Alcohol is also available on request at an additional cost. Return to hotel for overnight stay.
+
+<p><b>Day 10: Dubai - City tour - Burj Khalifa - Desert Safari</b></p>
+
+Breakfast at hotel. Proceed for Morning Dubai city tour. Visit the Dubai Museum, and stop to take pictures at Burj Al Arab, Jumeirah Mosque, etc. Later proceed to Visit the Burj Khalifa 124th Floor. (Observation desk) - The Tallest Building in the World. Construction began on 6 January 2004, with the exterior of the structure completed on 1 October 2009. The building officially opened on 4 January 2010, and is part of the new 2 km2 (490-acre) development called Downtown Dubai at the 'First Interchange' along Sheikh Zayed Road, near Dubai's main business district. The tower's architecture and engineering were performed by Skidmore, Owings and Merrill of Chicago, with Adrian Smith as chief architect, and Bill Baker as chief structural engineer. The primary contractor was Samsung C&T of South Korea. The tower's construction was done by the construction division of Al Ghurair Investment group. Later in the afternoon proceed for Desert Safari. Enjoy dune bashing followed by BBQ dinner wih Belly dance. Return to hotel for overnight stay.
+
+
+<p><b>Day 11: Dubai – Departure</b></p>
+
+After Breakfast, check out. Enjoy last minute shopping. Later proceed to airport for departure.
+
+</div>
+
+<div id="Accommodation Details" class="tabcontent">
+  <h3>Accommodation Details</h3>
+  <table>
+  <tr>
+    <th>City </th>
+    <th>Standard</th>
+    
+  </tr>
+
+  <tr>
+    <td>Bethlehem</td>
+    <td>Standard Hotel</td>
+    
+
+    </tr>
+
+    <tr>
+    <td>Cairo, Egypt</td>
+    <td>Standard Hotel</td>
+    
+
+    </tr>
+    <tr>
+    <td>Dubai - United Arab Emirates</td>
+    <td>Standard Hotel</td>
+    
+
+    </tr>
+
+    <tr>
+    <td>Nazareth, Israel</td>
+    <td>Standard Hotel</td>
+    
+
+    </tr>
+    <tr>
+    <td>Taba, Qesm Nwebaa, Egypt</td>
+    <td>Standard Hotel</td>
+    
+
+    </tr>
+</table>
+
+  </div>
+<div id="Price" class="tabcontent">
+  <h3>Price Per Person in Indian Rupees</h3>
+  <
+
+  </div>
+<div id="Inclusions & Exclusions" class="tabcontent">
+  <h3>Inclusions</h3>
+  <ul>
+  
+  <li>Return Airfare ex- Mumbai</li><br>
+  <li>Airport taxes, Govt taxes</li><br>
+  <li>3*& 4* Hotel Accommodation</li><br>
+  <li>Breakfast, Lunch & Dinner</li><br>
+  <li>Sightseeing as mentioned in the itinerary</li><br>
+  <li>All the relevant entrance fees included in Israel, Egypt & Amman</li><br>
+  <li>All in luxury a/c vehicle with English speaking govt. licensed guide</li><br>
+  <li>Israel, Egypt & Jordan, Dubai Visa</li><br>
+  <li>Israel, Egypt & Jordan Border taxes</li><br>
+  <li>Service of an Sakshi Travels Manager</li><br>
+  <li>Tips, Porterage to Guide & Driver</li><br>
+  <li>Travel Insurance up to 69Yrs</li><br>
+  <li>2N Dubai Stay, Dubai City Tour & Dubai Visa, Desert Safari</li>
+<h3>Exclusions</h3>
+  
+  <li>The cost of Passport</li><br>
+  <li>Additional meals other than specified in the itinerary and also food & drinks not forming part of group menus., Laundry, beverages, telephone charges</li><br>
+    <li>Anything which is not included in the cost includes.</li>
+</ul>
+  </div>
+<div id="Terms & Conditions" class="tabcontent">
+  <h3>Terms & Conditions</h3>
+  <ul>
+  <li>All passengers must travel together on the outbound journey. Changes in return journey dates are subject to confirmation Hotel / Flight price subject to change with / without notice. Subject to RBI regulations. BTQ Passengers only.</li>
+  <li>All passengers will be staying in Twin Sharing basis.</li>
+  <li>Travelling in Luxury Volvo Busses.</li>
+  <li>Child below 12 years will be staying in a triple sharing room.</li>
+  <li>Cap, Id Card & Bag will be provided to all the Pax.</li><br><br>
+  <li><b>Conditions:</b>
+
+A non-refundable deposit of Rs.45,000/- has to paid at the time of booking. Balance amount should be paid 25days prior to the departure. The passengers are fully responsible for any illness and injuries occurred during the travel. Taking a medical insurance policy before the tour is advised.</li>
+
+</ul>
+</div>
+
+<script>
+function openCity(evt, cityName) {
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+    }
+    tablinks = document.getElementsByClassName("tablinks");
+    for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+    document.getElementById(cityName).style.display = "block";
+    evt.currentTarget.className += " active";
+}
+
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+</script>
+     
+</body>
+</html> 

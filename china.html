@@ -1,0 +1,351 @@
++<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {box-sizing: border-box}
+body {font-family: "Lato", sans-serif;}
+
+/* Style the tab */
+.tab {
+    float: left;
+    border: 1px solid #ccc;
+    background-color: #f1f1f1;
+    width: 30%;
+    height: 300px;
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+    display: block;
+    background-color: inherit;
+    color: black;
+    padding: 22px 16px;
+    width: 100%;
+    border: none;
+    outline: none;
+    text-align: left;
+    cursor: pointer;
+    transition: 0.3s;
+    font-size: 17px;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+    background-color: #ddd;
+}
+
+/* Create an active/current "tab button" class */
+.tab button.active {
+    background-color: red;
+}
+
+/* Style the tab content */
+.tabcontent {
+    float: left;
+    padding: 0px 12px;
+    border: 1px solid #ccc;
+    width: 70%;
+    border-left: none;
+    height: 100%;
+}
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+tr:nth-child(even) {
+    background-color: #dddddd;
+}
+</style>
+</head>
+<body>
+
+
+
+<div class="tab">
+  <button class="tablinks" onclick="openCity(event, 'Photos')" id="defaultOpen">Photos 
+</button>
+  <button class="tablinks" onclick="openCity(event, 'Itinerary')">Itinerary</button>
+  <button class="tablinks" onclick="openCity(event, 'Accommodation Details')">Accommodation Details</button>
+  <button class="tablinks" onclick="openCity(event, 'Price')">Price</button>
+  <button class="tablinks" onclick="openCity(event, 'Inclusions & Exclusions')">Inclusions & Exclusions</button>
+  <button class="tablinks" onclick="openCity(event, 'Terms & Conditions')">Terms & Conditions</button>
+</div>
+
+<div id="Photos" class="tabcontent">
+  <h3>Photos</h3>
+  <div class="w3-content w3-display-container">
+  <img class="mySlides" src="images\packages pictures\International\china\china-4.jpg" width="900px" height="500px">
+  <img class="mySlides" src="images\packages pictures\International\china\china-2.jpg" width="900px" height="500px">
+  <img class="mySlides" src="images\packages pictures\International\china\china-3.jpg" width="900px" height="500px">
+  <img class="mySlides" src="images\packages pictures\International\china\china-5.jpg" width="900px" height="500px">
+ <img class="mySlides" src="images\packages pictures\International\china\china-6.jpg" width="900px" height="500px">
+  <img class="mySlides" src="images\packages pictures\International\china\china-7.jpg" width="900px" height="500px">
+   <img class="mySlides" src="images\packages pictures\International\china\china-8.jpg" width="900px" height="500px">
+    <img class="mySlides" src="images\packages pictures\International\china\china-9.jpg" width="900px" height="500px">
+  <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">Previous</button>
+  <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">Next</button>
+</div>
+
+<script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  if (n > x.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";  
+  }
+  x[slideIndex-1].style.display = "block";  
+}
+</script>
+
+
+</div>
+
+<div id="Itinerary" class="tabcontent">
+  <h3>Itinerary</h3>
+  <p><b>Day 1: Arrive in Beijing</b></p>
+
+On arrival, you will be met and transferred to hotel by the local guide. After a good rest, you will take dinner at Indian Restaurant. Overnight at the hotel.
+
+<p><b>Day 2: Beijing - Sightseeing</b></p>
+
+Depart from hotel in the morning to visit the biggest public square in the world, Tian’anmen Square conquers you with its grandeur at the first sight. Then you are leaded to Forbidden City. It is the imperial palace for 24 emperors during Ming and Qing Dynasties and the biggest ancient architecture complex in the world. You walk in the museum to see with your eyes, to touch with your hands and fell with your hearts. In the afternoon, you continue your trip to Summer Palace. Having the largest royal park and being well preserved, it was designated, in 1960 by the State Council, as a Key Cultural Relics Protection Site of China. Containing examples of the ancient arts, it also has graceful landscapes and magnificent constructions. Overnight stay in Beijing.
+
+
+
+
+<p><b>Day 3: Beijing - Great Wall of China & city sightseeing</b></p>
+
+In the morning drive 75km to visit the Jade factory and Great Wall at Juyong pass which is the symbol of China and the wisdom of Chinese people. It is very unbelievable that Chinese succeeded in building such a great architecture with simple tools in ancient time. You will have a short stop and take photos in Beijing Olympic Park, where you can see the outside view of the National Stadium - Bird’s Nest and National Aquatics Center --Water Cube Overnight stay in Beijing.
+
+
+<p><b>Day 4: Beijing - Sightseeing - Xian</b></p>
+
+In the morning, you will visit the Liulichang which is a famous district in down-town Beijing that is known for a series of traditional Chinese stone dwellings housing that sells various craftwork, artistry, and antiques. It is one of Beijing's traditional old quarters. Then visit Da Shi Lan, one of Beijing's most famous old-fashioned streets, has a history dating back 570 years. It was built in 1430, the 18th year of Emperor Yong Le's rule during the Ming Dynasty. Da Shi Lan is 375 meters long and is home to 26 shops from nine types of trade. Then you will take flight/bullet train to Xian (not included). Overnight stay in Xian.
+<p><b>Day 5: Xian - Sightseeing</b></p>
+
+Breakfast at hotel, then depart for a Full day tour with a visit to the China's Richest historic area, which is recognized by the UNESCO as the eighth wonder of the world, amazing Museum of the Terra Cotta Warriors which is very famous for the great underground army of the First Emperor of China, buried together with him 2200 years ago and discovered only in 1974. It is the most significant archeological excavations of the 20th century. Then you will visit Special art lacquer work shop, free time shopping at Ancient Style Street. Overnight stay in Xian.
+
+
+
+
+<p><b>Day 6: Xian - Shanghai</b></p>
+Morning you will visit the Ancient City Walls , It is the most complete city wall that has survived in China as well as one of the largest ancient military defensive systems in the world. Bid Wild Goose Pagoda which is a well-preserved ancient Building and a holy place for Buddhists. Afternoon you will take flight to Shanghai (not included). Overnight stay in Shanghai.
+<p><b>Day 7: Shanghai - Sightseeing</b></p>
+Today you'll find a Buddhism shrine - Jade Buddha Temple, located in a crowd of Shanghai City. It is named for its two bejeweled white jade Buddha. Carved from a whole piece of white jade, the sitting jade Buddha statue is translucent with a solemn expression, displaying the excellent skill and extraordinary art of Chinese people. Yuyuan Garden has many scenic courtyards decorated with baroque rockery, pools, and flora that are all connected by corridors and passageways. Then visit Pearl Factory, the shopping trip will begin in Nanjing Road which is starts at the Bund and runs westward, with People's square in the middle. Renowned for its bustling and modernization, Nanjing Road earns its reputation as the 'First Commercial Road in China', which is the good shopping heaven for your trip as the same as the Fifth Avenue in New York and Avenue des Champs-Elysées in Paris. Some of the traditional food and handicrafts of Shanghai can be found here. Then we come to the Bund, The renowned waterfront district is the city's most famous landmark. The word BUND is of Anglo-India origin meaning embankment on the waterfront. It is also the popular site to enjoy the night view of the city. Standing at Pudong New Area at the east side of Huangpu River, Oriental TV Tower was completed on October 1, 1994. It has a height of 468 meters. With multi-functions of sightseeing, catering, shopping, amusement and accommodations, this tower has become the symbol of the city and a popular tourist attraction in Shanghai. Overnight stay in Shanghai.After breakfast it’s time to check out. Transfer to the airport for your onward flight or back home.After breakfast it’s time to check out. Transfer to the airport for your onward flight or back home.
+
+<p><b>Day 8: Shanghai - Departure</b></p>
+After breakfast it’s time to check out. Transfer to the airport for your onward flight or back home.
+
+
+
+
+
+
+
+
+
+
+</div>
+
+<div id="Accommodation Details" class="tabcontent">
+  <h3>Accommodation Details</h3>
+  <table>
+  <tr>
+    <th>City </th>
+    <th>Standard</th>
+    <th>Deluxe</th>
+    <th>Premium</th>
+    
+    
+    
+  </tr>
+  <tr>
+    <td>Beijing</td>
+    <td>Beijing longdinghua hotel or similar</td>
+    <td>Beijing Plaza hotel or similar</td>
+    <td>Beijing hunan plaza hotel or similar</td>
+    <
+    </tr>
+    <tr>
+    <td>Shanghai</td>
+    <td>Shanghai xuhui reyfont hotel or similar</td>
+    <td>Shanghai Ramada wujiaochang hotel or similar</td>
+    <td>Shanghai baolong hotel or similar</td>
+   
+    </tr>
+    <tr>
+    <td>Xian</td>
+    <td>Xian oriental business hotel or similar</td>
+    <td>Xian Skytel hotel or similar</td>
+    <td>Xian days suites hotel or similar</td>
+    
+    </tr>
+
+      
+  
+</table>
+  
+ 
+  
+</div>
+<div id="Price" class="tabcontent">
+  <h3>Price Per Person in Indian Rupees</h3>
+
+  <table>
+  <tr>
+    <th>Hotel </th>
+    <th>Start Date</th>
+    <th>End Date</th>
+    <th>Twin</th>
+    <th>Single</th>
+    <th>Child with bed </th>
+    <th>Child no bed</th>
+  
+  </tr>
+
+  <tr>
+    <td>Standard</td>
+    <td>01 Apr 2018</td>
+    <td>30 Sep 2018</td>
+    <td>74316</td>
+    <td>133654</td>
+    <td>-</td>
+    <td>-</td>
+    </tr>
+
+    <tr>
+    <td>Standard</td>
+    <td>01 Oct 2018</td>
+    <td>31 Mar 2019</td>
+    <td>64260</td>
+    <td>115682</td>
+    <td>51066</td>
+    <td>34091</td>
+    </tr>
+<tr>
+    <td>Deluxe</td>
+    <td>01 Apr 2018</td>
+    <td>30 Sep 2018</td>
+    <td>78452</td>
+    <td>140857</td>
+    <td>-</td>
+    <td>-</td>
+    </tr>
+
+    <tr>
+    <td>Deluxe</td>
+    <td>01 Oct 2018</td>
+    <td>31 Mar 2019</td>
+    <td>67398</td>
+    <td>121244</td>
+    <td>53490</td>
+    <td>35660</td>
+    </tr>
+    <tr>
+    <td>Premium</td>
+    <td>01 Oct 2018</td>
+    <td>31 Mar 2019</td>
+    <td>74886</td>
+    <td>133084</td>
+    <td>59339</td>
+    <td>39583</td>
+    </tr>
+
+    
+
+
+    
+  
+  
+</table>
+
+  
+
+  
+</div>
+<div id="Inclusions & Exclusions" class="tabcontent">
+  <h3>Inclusions</h3>
+  <ul>
+  <li>3 Nights in Beijing with breakfast</li><br>
+  <li>2 Nights in Xian with breakfast</li><br>
+  <li>2 Nights in Shanghai with breakfast</li><br>
+  <li>Beijing :  Visit Tian an men Square, Forbidden City, Summer Palace, Jade factory, Great Wall at Juyong pass, Beijing Olympic Park, Liulichang, Da Shi Lan</li><br>
+  <li>Xian : Visit Museum of the Terra Cotta Warriors, Special art lacquer work shop, shopping at Ancient style street, Ancient City Walls, Bid Wild Goose Pagoda</li><br>
+  <li>Shanghai : Visit Jade Buddha Temple, Yuyuan Garden, Pearl Factory, Nanjing Road, Bund, Oriental TV Tower</li><br>
+  <li>Shanghai : Visit Jade Buddha Temple, Yuyuan Garden, Pearl Factory, Nanjing Road, Bund, Oriental TV Tower</li><br>
+  <li>Beijing airport to Hotel transfer</li><br>
+  <li>Shanghai hotel to airport transfer</li><br>
+  <li>All sightseeing and transfers on Private</li>
+  
+</ul>
+<h3>Exclusions</h3>
+<ul>
+  <li>Airfare and Taxes</li><br>
+  <li>Visa and Insurances charges</li><br>
+  <li>Any up gradation in hotel room category</li><br>
+  <li>Any meals other than specified above</li><br>
+  <li>Any sightseeing other than mentioned above</li><br>
+  <li>Any Entrance fees or Fees for video or camera permit</li><br>
+  <li>Any item of personal nature like tips, laundry, telephone calls, etc.</li><br>
+  <li>GST will be applicable on total invoice</li>
+  
+</ul>
+</div>
+<div id="Terms & Conditions" class="tabcontent">
+  <h3>Terms & Conditions</h3>
+  <ul>
+  <li>The given prices are valid for travel till 31st March 2019 </li>
+  <li>High season surcharges will be applicable</li>
+  <li>The Rate of Exchange (R.O.E) will be the prevailing rate on the day/date of booking</li>
+  <li>Rates are subject to change without prior notice</li>
+  <li>Rooms/Seats are subject to availability at the time of booking</li>
+  <li>Confirmation of Hotels and other services is subject to availability</li>
+  <li>International hotel check in is 1400hrs and checkout would be 1000hrs</li>
+  <li>Early check in and late checkout subject to availability. Itineraries are subject  to change</li>
+  <li>Cancellation charges applicable as per company policy </li>
+  <li>In case we are not able to provide the same hotels as mentioned, then we shall provide similar alternate properties, change in the cost if any will be advised</li>
+  <li>Passport copies of all the passengers are must to initiate the booking</li>
+  <li>We will not be liable for claims or expenses arising from circumstances beyond our control such as accidents, injuries delayed or cancelled flights and acts or forces of nature</li>
+  
+</ul>
+</div>
+
+<script>
+function openCity(evt, cityName) {
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+    }
+    tablinks = document.getElementsByClassName("tablinks");
+    for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+    document.getElementById(cityName).style.display = "block";
+    evt.currentTarget.className += " active";
+}
+
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+</script>
+     
+</body>
+</html> 

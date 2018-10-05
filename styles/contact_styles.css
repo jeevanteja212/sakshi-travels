@@ -303,7 +303,7 @@ section
 {
 	font-size: 48px;
 	font-weight: 100;
-	color: #FFFFFF;
+	color: red;
 }
 .home_breadcrumbs
 {
@@ -1098,7 +1098,7 @@ section
 }
 .contact_content
 {
-	margin-top: 74px;
+	margin-top: 40px;	
 }
 .contact_text p:last-of-type
 {
@@ -1128,13 +1128,21 @@ section
 	margin-top: -4px;
 	padding-left: 23px;
 	max-width: 310px;
+
+
 }
+.address 
+	{
+		float: left;
+
+	}
 .contact_info_content ul li
 {
 	font-size: 14px;
 	color: #131a2f;
 	font-weight: 500;
 	margin-bottom: 18px;
+
 }
 .contact_info_social
 {
@@ -1507,3 +1515,35 @@ section
 {
 	background: rgba(254,60,82,0.8);
 }
+<style>
+	*{
+		box-sizing: border-box;
+	}
+    h1{
+    	text-align: center;
+    	color: red;
+    }
+    .div1{
+    	border:1px solid black;
+    	height: 100px;
+    	width: 100px;
+
+    }
+    
+    .flex-container {
+  display: flex;
+ 
+}
+
+.flex-container > div {
+  
+  margin: 10px;
+  padding: 15px;
+  font-size: 20px;
+ 	
+  width:400px;
+  height: 300px;
+
+
+}
+</style>

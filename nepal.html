@@ -1,0 +1,366 @@
++<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {box-sizing: border-box}
+body {font-family: "Lato", sans-serif;}
+
+/* Style the tab */
+.tab {
+    float: left;
+    border: 1px solid #ccc;
+    background-color: #f1f1f1;
+    width: 30%;
+    height: 300px;
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+    display: block;
+    background-color: inherit;
+    color: black;
+    padding: 22px 16px;
+    width: 100%;
+    border: none;
+    outline: none;
+    text-align: left;
+    cursor: pointer;
+    transition: 0.3s;
+    font-size: 17px;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+    background-color: #ddd;
+}
+
+/* Create an active/current "tab button" class */
+.tab button.active {
+    background-color: red;
+}
+
+/* Style the tab content */
+.tabcontent {
+    float: left;
+    padding: 0px 12px;
+    border: 1px solid #ccc;
+    width: 70%;
+    border-left: none;
+    height: 100%;
+}
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+tr:nth-child(even) {
+    background-color: #dddddd;
+}
+</style>
+</head>
+<body>
+
+
+
+<div class="tab">
+  <button class="tablinks" onclick="openCity(event, 'Photos')" id="defaultOpen">Photos 
+</button>
+  <button class="tablinks" onclick="openCity(event, 'Itinerary')">Itinerary</button>
+  <button class="tablinks" onclick="openCity(event, 'Accommodation Details')">Accommodation Details</button>
+  <button class="tablinks" onclick="openCity(event, 'Price')">Price</button>
+  <button class="tablinks" onclick="openCity(event, 'Inclusions & Exclusions')">Inclusions & Exclusions</button>
+  <button class="tablinks" onclick="openCity(event, 'Terms & Conditions')">Terms & Conditions</button>
+</div>
+
+<div id="Photos" class="tabcontent">
+  <h3>Photos</h3>
+  <div class="w3-content w3-display-container">
+  <img class="mySlides" src="images\packages pictures\International\nepal\nepal-2.jpg" width="900px" height="500px">
+  <img class="mySlides" src="images\packages pictures\International\nepal\nepal-3.jpg" width="900px" height="500px">
+  <img class="mySlides" src="images\packages pictures\International\nepal\nepal-4.jpg" width="900px" height="500px">
+  <img class="mySlides" src="images\packages pictures\International\nepal\nepal-5.jpg" width="900px" height="500px">
+  <img class="mySlides" src="images\packages pictures\International\nepal\nepal-6.jpg" width="900px" height="500px">
+
+<img class="mySlides" src="images\packages pictures\International\nepal\nepal-7.jpg" width="900px" height="500px">
+
+<img class="mySlides" src="images\packages pictures\International\nepal\nepal-8.jpg" width="900px" height="500px">
+
+<img class="mySlides" src="images\packages pictures\International\nepal\nepal-9.jpg" width="900px" height="500px">
+
+
+  <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">Previous</button>
+  <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">Next</button>
+</div>
+
+<script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  if (n > x.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";  
+  }
+  x[slideIndex-1].style.display = "block";  
+}
+</script>
+
+
+</div>
+
+<div id="Itinerary" class="tabcontent">
+  <h3>Itinerary</h3>
+  <p><b>Day 1: Arrive in Kathmandu - Local sightseeing</b></p>
+
+Meeting at airport upon arrival by office personnel. Transfer to hotel. Kathmandu is the capital of Nepal and the Kathmandu Valley is the political and cultural heart of the Kingdom.  The urban sprawl that makes up modern Kathmandu is in fact two cities, Patan and Kathmandu.  After short relaxation at the hotel, you will be taken for a visit of the Hindu culture in Nepal, Pashupatinath.  This is the place where holy saddhus pray. The Pashupatinath Temple is a famous, sacred Hindu temple dedicated to Pashupatinath and is located on the banks of the Bagmati River 5 kms north-east of Kathmandu Valley in the eastern city of Kathmandu the capital of Nepal. This temple is considered one of the sacred temples of Hindu faith .The temple serves as the seat of the national deity, Lord Pashupatinath. This temple complex is on UNESCO World Heritage Sites's list since 1979. This "extensive Hindu temple precinct" is a "sprawling collection of temples, ashrams, images and inscriptions raised over the centuries along the banks of the sacred Bagmati River".  Overnight stay in Kathmandu.
+<p><b>Day 2: Kathmandu - Chitwan</b></p>
+
+Drive to Chitwan. Chitwan is 180 Km from Kathmandu & is a 05 hours’ drive from Kathmandu. Chitwan is one of Asia's premier wildlife reserves. Its 360 square miles of tall grasslands and forests are home to a wide variety of mammals and birds, including several endangered species. Overnight in Chitwan.
+
+
+
+<p><b>Day 3: Chitwan - Elephant Safari</b></p>
+
+Enjoy Jungle observation at Chitwan National park. The highlight being the Elephant Safari in the jungles. Other activities are Canoeing, Dugout canoe, Nature Walk and Bird Watching. Also experience walking through the forests with naturalists and watch the Native folk dances of the Terais. Overnight in Chitwan.
+<p><b>Day 4: Chitwan - Pokhara</b></p>
+
+Drive to Pokhara. Pokhara is 165 Kms & is a 05 hours’ drive from Chitwan. From Pokhara town (2,352 feet) in good weather there are splendid views right from the hotel. Later you will visit Bindebasini Temple. This is one of the oldest temples in Pokhara was a part of Kaski Kingdom, the main deity of the temple, Goddess Durga, was brought from India. Apart from the peace and tranquility that can be felt in this region, the premises of the temple offers a good view of the Himalaya on a clear day. The temple is in the area of the bazaar, hence a journey of the old bazaar can be combined with a visit to the temple. Sightseeing to Devi’s fall, also known as Patale Chango is an awesome waterfall lying 2 km southwest of Pokhara. During summer and rainy season, the waterfall takes its real form, with gushing water splashing and making its way through the rocks. Just opposite of Devi’s fall, on the other side of the road, there is Gupteshwor Cave. This cave is popular for the different natural forms made from limestone deposits. Photography is strictly prohibited inside the cave. Overnight at hotel.
+<p><b>Day 5: Pokhara – Sarangkot - Kathmandu</b></p>
+
+This morning you will go for an excursion trip to Sarangkot. Sarangkot is the most popular tourist destination from where the tourist can enjoy the great view of the Pokhara Valley and the magnificent view of the mountains. Sarangkot is only 13 kms from Lake Side, Pokhara. Sarangkot is the highest view point for a sunrise and it is just 1592m high. Sarangkot is cooler than Pokhara. Sarangkot can be reached easily by 45 to 60 minutes by a car ride to the top from Pokhara. Many tourists come to Sarangkot for sunrise view and go back.Paragliding can also be done from Sarangkot. From Sarangkot, on the northern direction we can see Dhaulagiri in the far west. Annapurna range is visible when the weather is clear on the same side. On the southern direction the village overlooks the city of Pokhara and its lake on the north-western outskirts of the city.Later drive back to Kathmandu retracing the same path & transfer to hotel. Rest day at leisure. One can indulge in shopping or visit the casinos (EXTRA COST). Overnight at hotel.
+
+
+<p><b>Day 6: Kathmandu - Sightseeing - Departure</b></p>
+This morning your tour will take you for a visit to Patan. Also known as Lalitpur, the city of beauty is separated from Kathmandu only by the Bagmati River and is the second largest town in the valley. Lalitpur is fragmented from other cities due to its substantive architectural ancient masterpieces. Patan's central Durbar Square is absolutely packed with temples: It’s an architectural center point with a far greater concentration of temples per sq. meter than in Kathamandu or Bhaktapur. Within the city also lies the Tibetan refugee center, home to most of the valley's Tibetan population.  While technically refugees, the Tibetans are some of the wealthiest people in the valley because of the carpet industry they operate.  For those looking to bring home a fine Tibetan carpet, this is the place to shop. You will then go to Swayambhunath the golden spire of the 5th-century Swayambhu stupa is adorned with a colorful fluttering of prayer flags; it crowns a hill overlooking the Kathmandu Valley and offers fantastic views over the city of Kathmandu. Swayambhunath is one of the most recognizable symbols in Nepal and the painted eyes of Buddha watch all who ascend the worn stone steps. Later, you will be transferred to the airport in time to board your flight for onward journey.
+
+
+
+
+
+
+
+</div>
+
+<div id="Accommodation Details" class="tabcontent">
+  <h3>Accommodation Details</h3>
+  <table>
+  <tr>
+    <th>City </th>
+    <th>Budget</th>
+    <th>Standard</th>
+    <th>Deluxe</th>
+    <th>Premium</th>
+    
+    
+    
+  </tr>
+  <tr>
+    <td>Chitwan</td>
+    <td>Chitwan Adventure Resort/ Royal Safari or Similar</td>
+    <td>Chitwan Adventure Resort/ Royal Safari or Similar</td>
+    <td>Tiger Land Safari Resort or Similar</td>
+    <td>Tiger Land Safari Resort or Similar</td>
+    </tr>
+    <tr>
+    <td>Kathmandu</td>
+    <td>Vaishali /Manang /Mirage Lords Inn or Similar</td>
+    <td>Buddy/ Grand in or Similar</td>
+    <td>Shambala /Ambassador or Similar</td>
+    <td>Radisson/Annapurna or Similar</td>
+    </tr>
+    <tr>
+    <td>Pokhara</td>
+    <td>City Park or Similar</td>
+    <td>Kuti Resort or Similar</td>
+    <td>Pokhara Grande / Atithi Resort or Similar</td>
+    <td>Pokhara Grande / Atithi Resort or Similar</td>
+    </tr>
+
+      
+  
+</table>
+  
+ 
+  
+</div>
+<div id="Price" class="tabcontent">
+  <h3>Price Per Person in Indian Rupees</h3>
+
+  <table>
+  <tr>
+    <th>Hotel </th>
+    <th>Start Date</th>
+    <th>End Date</th>
+    <th>Twin ( Min. 2 Adults )</th>
+    <th>Twin ( Min. 4 Adults )</th>
+    <th>Extra Bed </th>
+    <th>Single</th>
+  
+  </tr>
+
+  <tr>
+    <td>Budget</td>
+    <td>01 Apr 2018</td>
+    <td>30 Sep 2018</td>
+    <td>26990</td>
+    <td>25990</td>
+    <td>12490</td>
+    <td>46990</td>
+    </tr>
+
+    <tr>
+    <td>Budget</td>
+    <td>01 Oct 2018</td>
+    <td>31 Mar 2019</td>
+    <td>25990</td>
+    <td>23990</td>
+    <td>-</td>
+    <td>45990</td>
+    </tr>
+<tr>
+    <td>Standard</td>
+    <td>01 Apr 2018</td>
+    <td>30 Sep 2018</td>
+    <td>29990</td>
+    <td>28990</td>
+    <td>15990</td>
+    <td>53990</td>
+    </tr>
+
+    <tr>
+    <td>Standard</td>
+    <td>01 Oct 2018</td>
+    <td>31 Mar 2019</td>
+    <td>26990</td>
+    <td>25490</td>
+    <td>-</td>
+    <td>48990</td>
+    </tr>
+    <tr>
+    <td>Deluxe</td>
+    <td>01 Apr 2018</td>
+    <td>30 Sep 2018</td>
+    <td>31990</td>
+    <td>30990</td>
+    <td>17490</td>
+    <td>55990</td>
+    </tr>
+
+    <tr>
+    <td>Deluxe</td>
+    <td>01 Oct 2018</td>
+    <td>31 Mar 2019</td>
+    <td>33490</td>
+    <td>31490</td>
+    <td>-</td>
+    <td>59990</td>
+    </tr>
+    <tr>
+    <td>Premium</td>
+    <td>01 Apr 2018</td>
+    <td>30 Sep 2018</td>
+    <td>36990</td>
+    <td>35990</td>
+    <td>22990</td>
+    <td>67990</td>
+    </tr>
+
+    <tr>
+    <td>Premium</td>
+    <td>01 Oct 2018</td>
+    <td>31 Mar 2019</td>
+    <td>35990</td>
+    <td>33990</td>
+    <td>-</td>
+    <td>63990</td>
+    </tr>
+    
+
+
+    
+  
+  
+</table>
+
+  
+
+  
+</div>
+<div id="Inclusions & Exclusions" class="tabcontent">
+  <h3>Inclusions</h3>
+  <ul>
+  <li>1 Night in Kathmandu with breakfast</li><br>
+  <li>2 Nights in Chitwan with breakfast, lunch and dinner</li><br>
+  <li>1 Night in Pokhara with breakfast</li><br>
+  <li>1 Night in Kathmandu with breakfast</li><br>
+  <li>Local sightseeing in Kathmandu and Pokhara</li><br>
+  <li>Elephant Safari at Chitwan National park</li><br>
+  <li>All transfers and sightseeing by private AC vehicle</li>
+  
+</ul>
+<h3>Exclusions</h3>
+<ul>
+  <li>Airfare and Taxes</li><br>
+  <li>Any increase in Govt. taxes, Fuel price and any applicability of new taxes from the govt.</li><br>
+  <li>Any up gradation in hotel room category</li><br>
+  <li>Any meals other than specified above</li><br>
+  <li>Any sightseeing other than mentioned above</li><br>
+  <li>Any Entrance fees or Fees for video or camera permit</li><br>
+  <li>Any item of personal nature like tips, laundry, telephone calls etc.</li><br>
+  <li>GST will be applicable on total invoice</li>
+  
+</ul>
+</div>
+<div id="Terms & Conditions" class="tabcontent">
+  <h3>Terms & Conditions</h3>
+  <ul>
+  <li>The given prices are valid for travel till 31st March 2019 </li>
+  <li>High season surcharges will be applicable</li>
+  <li>Rates are subject to change without prior notice</li>
+  <li>Rooms/Seats are subject to availability at the time of booking</li>
+  <li>Vehicle will be not at disposal. If guest wish to go for additional sightseeing extra charges will be applicable</li>
+  <li>Please carry original ID Proof (Voter ID card /Passport/Driving License) etc. for security purpose & hotel policy</li>
+  <li>Early check in and late checkout subject to availability. Itineraries are subject  to change</li>
+  <li>Cancellation charges applicable as per company policy </li>
+  <li>In case we are not able to provide the same hotels as mentioned, then we shall provide similar alternate properties, change in the cost if any will be advised</li>
+  <li>We will not be liable for claims or expenses arising from circumstances beyond our control such as accidents, injuries delayed or cancelled flights and acts or forces of nature</li>
+  
+</ul>
+</div>
+
+<script>
+function openCity(evt, cityName) {
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+    }
+    tablinks = document.getElementsByClassName("tablinks");
+    for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+    document.getElementById(cityName).style.display = "block";
+    evt.currentTarget.className += " active";
+}
+
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+</script>
+     
+</body>
+</html> 

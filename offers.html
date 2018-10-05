@@ -10,6 +10,53 @@
 <link href="plugins/font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
 <link rel="stylesheet" type="text/css" href="styles/offers_styles.css">
 <link rel="stylesheet" type="text/css" href="styles/offers_responsive.css">
+
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {font-family: Arial;}
+
+/* Style the tab */
+.tab {
+    overflow: hidden;
+    border: 1px solid #ccc;
+    background-color: #f1f1f1;
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+    font-size: 17px;
+    padding: 15px;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+    background-color: #ddd;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+    background-color: red;
+}
+
+/* Style the tab content */
+.tabcontent {
+    display: none;
+    padding: 6px 12px;
+    border: 1px solid #ccc;
+    border-top: none;
+    width: 100%;
+
+}
+</style>
+
 </head>
 <body>
 
@@ -115,7 +162,7 @@
 				<div class="col">
 					<div class="home_content">
 						<div class="home_content_inner">
-							<div class="home_title">Packages</div>
+							<div class="home_title"><b>Packages</b></div>
 							<div class="home_breadcrumbs">
 								<ul class="home_breadcrumbs_list">
 									<li class="home_breadcrumb"><a href="index.html">Home</a></li>
@@ -144,47 +191,229 @@
 			<div class="row filtering_row">
 				<div class="col">
 					<div class="sorting_group_1">
-						<ul class="item_sorting">
-							<li>
-								<span class="sorting_text"></span>
-								<i class="fa fa-angle-down"></i>
-								<ul>
-									<li class="item_sorting_btn" data-isotope-option='{ "sortBy": "original-order" }'><span>Show All</span></li>
-									<li class="item_sorting_btn" data-isotope-option='{ "sortBy": "price" }'><span>Price</span></li>
-									<li class="item_sorting_btn" data-isotope-option='{ "sortBy": "name" }'><span>Name</span></li>
-								</ul>
-							</li>
-							<li>
-								<span class="sorting_text"></span>
-								<i class="fa fa-angle-down"></i>
-								<ul>
-									<li class="item_filter_btn" data-filter="*"><span>Show All</span></li>
-									<li class="item_sorting_btn" data-isotope-option='{ "sortBy": "stars" }'><span>Ascending</span></li>
-									<li class="item_filter_btn" data-filter=".rating_1"><span>1</span></li>
-									<li class="item_filter_btn" data-filter=".rating_2"><span>2</span></li>
-									<li class="item_filter_btn" data-filter=".rating_3"><span>3</span></li>
-									<li class="item_filter_btn" data-filter=".rating_4"><span>4</span></li>
-									<li class="item_filter_btn" data-filter=".rating_5"><span>5</span></li>
-								</ul>
-							</li>
-							<li>
-								<span class="sorting_text"></span>
-								<i class="fa fa-angle-down"></i>
-								<ul>
-									<li class="item_sorting_btn" data-isotope-option='{ "sortBy": "original-order" }'><span>Default</span></li>
-									<li class="item_sorting_btn" data-isotope-option='{ "sortBy": "price" }'><span>Price</span></li>
-								</ul>
-							</li>
-							<li>
-								<span class="sorting_text"></span>
-								<i class="fa fa-angle-down"></i>
-								<ul>
-									<li><span>Facility</span></li>
-									<li><span>Facility</span></li>
-									<li><span>Facility</span></li>
-								</ul>
-							</li>
-						</ul>
+						
+						<div class="tab">
+  <button class="tablinks" onclick="openCity(event, 'Domestic')">Domestic</button>
+  <button class="tablinks" onclick="openCity(event, 'International')">International</button>
+  <button class="tablinks" onclick="openCity(event, 'Group Package')">Group Package</button>
+   <button class="tablinks" onclick="openCity(event, 'Holyland')">Holy Land</button>
+   <button class="tablinks" onclick="openCity(event, 'India Inbound')">India Inbound</button>
+</div>
+
+<div id="Domestic" class="tabcontent">
+  <h3>Domestic Packages</h3>
+  <br>
+  <br> <b>KERALA<h6 style="text-align: center;">Starting from INR 16990* only ( Min. 4 Adults )</b></h6>
+  <p style="text-align: center;">  7 Night / 8 Days       </p>
+<img src="images\packages pictures\Domestic\Kerala\kerala-1.jpg" alt="" width="1200px" height="500px">
+<p><a href="kerala.html"><b>More Details Click here</b></a></p><br>
+              
+               
+                <br><b> GOA<h6 style="text-align: center;">Starting from INR 6590* only</b></h6>
+                <p style="text-align: center;">  3 Night / 4 Days     </p>
+                <img src="images\packages pictures\Domestic\Goa\goa.jpg" alt="" width="1200px" height="500px">
+                <p><a href="goa.html">More Details click here</a></p><br>
+              
+               
+                <br><b> DARJELING<h6 style="text-align: center;">Starting from INR 23990* only ( Min. 4 Adults )</b></h6>
+                <p style="text-align: center;">  6 Night / 7 Days      </p>
+               <img src="images\packages pictures\Domestic\Darjeling\Darjeling-1.jpg" alt="" width="1200px" height="500px">
+                <p><a href="darjeeling.html">More Details click here</a></p><br>
+              
+              
+               <br><b> HIMACHAL<h6 style="text-align: center;">Starting from INR 15990* only ( Min. 4 Adults )</b></h6>
+               <p style="text-align: center;">  6 Night / 7 Days       </p>
+               <img src="images\packages pictures\Domestic\himachal\himachal-4.jpg" alt="" width="1200px" height="500px">
+                <p><a href="himachal.html">More Details click here</a></p><br>
+
+                <br><b> gujarat<h6 style="text-align: center;">Starting from INR 18990* only ( Min. 4 Adults )</b></h6>
+               <p style="text-align: center;">  7 Night / 8 Days      </p>
+               <img src="images\packages pictures\Domestic\himachal\himachal-4.jpg" alt="" width="1200px" height="500px">
+                <p><a href="gujarat.html">More Details click here</a></p><br>
+
+                <br><b> hydrebad<h6 style="text-align: center;">Starting from INR 11990* only ( Min. 4 Adults )</b></h6>
+               <p style="text-align: center;">  3 Night / 4 Days       </p>
+               <img src="images\packages pictures\Domestic\Hydrebad\Hydrebad-1.jpg" alt="" width="1200px" height="500px">
+                <p><a href="hydrebad.html">More Details click here</a></p><br>
+
+                <br><b> karnataka<h6 style="text-align: center;">Starting from INR 13990* only ( Min. 4 Adults )</b></h6>
+               <p style="text-align: center;">  3 Night / 4 Days      </p>
+               <img src="images\packages pictures\Domestic\Karanataka\Karanataka-1.jpg" alt="" width="1200px" height="500px">
+                <p><a href="karnataka.html">More Details click here</a></p><br>
+
+                <br><b> Mahabaleswar<h6 style="text-align: center;">Starting from INR 9990* only ( Min. 4 Adults )</b></h6>
+               <p style="text-align: center;">  2 Night / 3 Days      </p>
+               <img src="images\packages pictures\Domestic\Mahabaleswar\Mahabaleswar-1.jpg" alt="" width="1200px" height="500px">
+                <p><a href="mahabaleshwar.html">More Details click here</a></p><br>
+
+
+                <br><b> Munnar<h6 style="text-align: center;">Starting from INR 7990* only ( Min. 4 Adults )</b></h6>
+               <p style="text-align: center;">  2 Night / 3 Days       </p>
+               <img src="images\packages pictures\Domestic\Munnar\Munnar-1.jpg" alt="" width="1200px" height="500px">
+                <p><a href="munnar.html">More Details click here</a></p><br>
+
+                <br><b> Rajasthan<h6 style="text-align: center;">Starting from INR 16990* only ( Min. 4 Adults )</b></h6>
+               <p style="text-align: center;">  5 Night / 6 Days      </p>
+               <img src="images\packages pictures\Domestic\Rajasthan\Rajasthan-4.jpg" alt="" width="1200px" height="500px">
+                <p><a href="rajasthan.html">More Details click here</a></p>
+
+  
+ 
+</div>
+
+<div id="International" class="tabcontent">
+  <h3>International</h3>
+  <br><b> AUSTRALIA<h6 style="text-align: center;">Starting from INR 16990* only ( Min. 4 Adults )</b></h6>
+               <p style="text-align: center;">  5 Night / 6 Days      </p>
+  
+<img src="images\packages pictures\International\austria\austria-1.jpg" alt="" width="1200px" height="500px">
+               <p><a href="australia.html">More Details click here</a></p>
+
+
+    <br><b> THAILAND<h6 style="text-align: center;">Starting from INR 16990* only ( Min. 4 Adults )</b></h6>
+               <p style="text-align: center;">  5 Night / 6 Days      </p>
+                
+                <img src="images\packages pictures\International\thiland\thiland-1.jpg" alt="" width="1200px" height="500px">
+               <p><a href="thailand.html">More Details click here</a></p>
+
+
+ <br><b> NEPAL<h6 style="text-align: center;">Starting from INR 16990* only ( Min. 4 Adults )</b></h6>
+               <p style="text-align: center;">  5 Night / 6 Days      </p>
+        <img src="images\packages pictures\International\nepal\nepal-1.jpg" alt="" width="1200px" height="500px">
+               <p><a href="NEPAL.html">More Details click here</a></p>
+
+ <br><b> CHINA<h6 style="text-align: center;">Starting from INR 16990* only ( Min. 4 Adults )</b></h6>
+               <p style="text-align: center;">  5 Night / 6 Days      </p>
+        <img src="images\packages pictures\International\china\china-1.jpg" alt="" width="1200px" height="500px">
+               <p><a href="CHINA.html">More Details click here</a></p>
+
+
+
+<br><b> DUBAI<h6 style="text-align: center;">Starting from INR 16990* only ( Min. 4 Adults )</b></h6>
+               <p style="text-align: center;">  5 Night / 6 Days      </p>
+        <img src="images\packages pictures\International\dubai\dubai-1.jpg" alt="" width="1200px" height="500px">
+               <p><a href="DUBAI.html">More Details click here</a></p>
+
+<br><b> MALDIVES<h6 style="text-align: center;">Starting from INR 16990* only ( Min. 4 Adults )</b></h6>
+               <p style="text-align: center;">  5 Night / 6 Days      </p>
+        <img src="images\packages pictures\International\maldives\maldives-1.jpg" alt="" width="1200px" height="500px">
+               <p><a href="MALDIVES.html">More Details click here</a></p>
+ 
+
+<br><b> RUSSIA<h6 style="text-align: center;">Starting from INR 16990* only ( Min. 4 Adults )</b></h6>
+               <p style="text-align: center;">  5 Night / 6 Days      </p>
+        <img src="images\packages pictures\International\Russia\Russia-1.png" alt="" width="1200px" height="500px">
+         <p><a href="Russia.html">More Details click here</a></p>
+
+<br><b> LONDON<h6 style="text-align: center;">Starting from INR 16990* only ( Min. 4 Adults )</b></h6>
+               <p style="text-align: center;">  5 Night / 6 Days      </p>
+        <img src="images\packages pictures\International\london\london-1.jpg" alt="" width="1200px" height="500px">
+               <p><a href="london.html">More Details click here</a></p>
+
+
+<br><b> SPAIN<h6 style="text-align: center;">Starting from INR 16990* only ( Min. 4 Adults )</b></h6>
+               <p style="text-align: center;">  5 Night / 6 Days      </p>
+        <img src="images\packages pictures\International\spain\spain-1.jpg" alt="" width="1200px" height="500px">
+               <p><a href="SPAIN.html">More Details click here</a></p>
+
+
+<br><b> HONGKONG<h6 style="text-align: center;">Starting from INR 16990* only ( Min. 4 Adults )</b></h6>
+               <p style="text-align: center;">  5 Night / 6 Days      </p>
+        <img src="images\packages pictures\International\HongKong\HongKong-1.jpg" alt="" width="1200px" height="500px">
+               <p><a href="HONGKONG.html">More Details click here</a></p>
+
+<br><b> SINGAPORE<h6 style="text-align: center;">Starting from INR 16990* only ( Min. 4 Adults )</b></h6>
+               <p style="text-align: center;">  5 Night / 6 Days      </p>
+        <img src="images\packages pictures\International\singapore\singapore-1.jpg" alt="" width="1200px" height="500px">
+               <p><a href="singapore.html">More Details click here</a></p>
+
+
+<br><b> MALAYSIA<h6 style="text-align: center;">Starting from INR 16990* only ( Min. 4 Adults )</b></h6>
+               <p style="text-align: center;">  5 Night / 6 Days      </p>
+        <img src="images\packages pictures\International\malaysia\malaysia-1.jpg" alt="" width="1200px" height="500px">
+               <p><a href="malaysia.html">More Details click here</a></p>
+
+<br><b> USA<h6 style="text-align: center;">Starting from INR 16990* only ( Min. 4 Adults )</b></h6>
+               <p style="text-align: center;">  5 Night / 6 Days      </p>
+        <img src="images\packages pictures\International\USA\USA-1.jpg" alt="" width="1200px" height="500px">
+               <p><a href="USA.html">More Details click here</a></p>
+
+
+
+</div>
+
+<div id="Group Package" class="tabcontent">
+  <h3>Group Package</h3><br><br>
+  
+    <b> Holy Land <h6 style="text-align: center;">Starting from INR 44490* only</b></h6>
+               <p style="text-align: center;">  6 Night / 7 Days      </p>
+        <img src="images\packages pictures\holyland\holyland-1.jpg" alt="" width="1200px" height="500px">
+               <p><a href="holyland.html">More Details click here</a></p><br>
+
+    
+</div>
+<div id="Holyland" class="tabcontent">
+  <h3>Holy Land Package</h3><br><br>
+  
+      <b> BEST OF HOLY LAND TOUR (EX-MUMBAI)<h6 style="text-align: center;">Starting from INR 93000* only</b></h6>
+               <p style="text-align: center;">  10 Night / 11 Days      </p>
+        <img src="images\packages pictures\holyland\holyland-2.jpg" alt="" width="1200px" height="500px">
+               <p><a href="BESTholyland.html">More Details click here</a></p>  <br>
+     <b> EXCLUSIVE HOLY LAND TOUR WITH DUBAI <h6 style="text-align: center;">Starting from INR 110000* only</b></h6>
+               <p style="text-align: center;">  10 Night / 11 Days
+      </p>
+        <img src="images\packages pictures\holyland\holyland-3.jpg" alt="" width="1200px" height="500px">
+               <p><a href="EXCLUSIVEholyland.html">More Details click here</a></p>  <br>
+
+     <b> ESSENTIAL HOLY LAND TOUR (EX-COCHIN)<h6 style="text-align: center;">Starting from INR 86708* only</b></h6>
+               <p style="text-align: center;">  8 Night / 9 Days      </p>
+        <img src="images\packages pictures\holyland\holyland-4.jpg" alt="" width="1200px" height="500px">
+               <p><a href="ESSENTIALholyland.html">More Details click here</a></p>  <br>
+
+
+</div>
+
+<div id="India Inbound" class="tabcontent">
+  <h3>India Inbound</h3><br><br>
+
+      <b> ESSENTIAL HOLY LAND TOUR (EX-COCHIN)<h6 style="text-align: center;">Starting from INR 86708* only</b></h6>
+               <p style="text-align: center;">  8 Night / 9 Days      </p>
+        <img src="images\packages pictures\holyland\holyland-4.jpg" alt="" width="1200px" height="500px">
+               <p><a href="ESSENTIALholyland.html">More Details click here</a></p>  <br>
+               
+      <b> ESSENTIAL HOLY LAND TOUR (EX-COCHIN)<h6 style="text-align: center;">Starting from INR 86708* only</b></h6>
+               <p style="text-align: center;">  8 Night / 9 Days      </p>
+        <img src="images\packages pictures\holyland\holyland-4.jpg" alt="" width="1200px" height="500px">
+               <p><a href="ESSENTIALholyland.html">More Details click here</a></p>  <br>
+
+        <b> ESSENTIAL HOLY LAND TOUR (EX-COCHIN)<h6 style="text-align: center;">Starting from INR 86708* only</b></h6>
+               <p style="text-align: center;">  8 Night / 9 Days      </p>
+        <img src="images\packages pictures\holyland\holyland-4.jpg" alt="" width="1200px" height="500px">
+               <p><a href="ESSENTIALholyland.html">More Details click here</a></p>  <br>
+
+
+
+
+  </div>
+
+<script>
+function openCity(evt, cityName) {
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+    }
+    tablinks = document.getElementsByClassName("tablinks");
+    for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+    document.getElementById(cityName).style.display = "block";
+    evt.currentTarget.className += " active";
+}
+</script>
+
+
+
 					</div>
 					<div class="sorting_group_2 clearfix">
 						<ul>
@@ -208,10 +437,10 @@
 							<div class="item_image"><img src="images/top_1.jpg" alt=""></div>
 							<div class="item_content">
 								<div class="item_price"></div>
-								<div class="item_title">Thailand<br><h6>Starting from INR 5937* only</h6></div>
+								<div class="item_title">Thailand<br><h6>Starting from INR  8978* only</h6></div>
 								<ul>
-									<li>1 person</li>
-									<li>5 Night / 6 Days</li>
+									<li>1 person  ( Min. 4 Adults )</li>
+									<li>4 Night / 5 Days</li>
 									<li>3 star hotel</li>
 								</ul>
 								<div class="rating rating_5" data-rating="5">
@@ -222,7 +451,7 @@
 									<i class="fa fa-star"></i>
 								</div>
 								<div class="item_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce fringilla lectus nec diam auctor, ut fringilla diam sagittis. Quisque vel est id justo faucibus dapibus id a nibh. Aenean suscipit consequat lacus, sit amet mollis nulla. Morbi sagittis orci id lacus convallis tempus eget sit amet metus.</div>
-								<div class="item_more_link"><a href="#">Read More</a></div>
+								<div class="item_more_link"><a href="Thailand.html">Read More</a></div>
 							</div>
 						</div>
 
@@ -231,10 +460,10 @@
 							<div class="item_image"><img src="images/top_2.jpg" alt=""></div>
 							<div class="item_content">
 								<div class="item_price"></div>
-								<div class="item_title">Holy Land<br><h6>Starting from INR 86708* only</h6></div>
+								<div class="item_title">Holy Land<br><h6>Starting from INR 93000* only</h6></div>
 								<ul>
 									<li>1 person</li>
-									<li>8 Night / 9 Days</li>
+									<li>10 Night / 11 Days</li>
 									<li>3 star hotel</li>
 								</ul>
 								<div class="rating rating_3" data-rating="3">
@@ -245,7 +474,7 @@
 									<i class="fa fa-star"></i>
 								</div>
 								<div class="item_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce fringilla lectus nec diam auctor, ut fringilla diam sagittis. Quisque vel est id justo faucibus dapibus id a nibh. Aenean suscipit consequat lacus, sit amet mollis nulla. Morbi sagittis orci id lacus convallis tempus eget sit amet metus.</div>
-								<div class="item_more_link"><a href="#">Read More</a></div>
+								<div class="item_more_link"><a href="HolyLand.html">Read More</a></div>
 							</div>
 						</div>
 
@@ -254,9 +483,9 @@
 							<div class="item_image"><img src="images/top_3.jpg" alt=""></div>
 							<div class="item_content">
 								<div class="item_price"></div>
-								<div class="item_title">Singapore - Malaysia<br><h6>Starting from INR 15435* only</h6></div>
+								<div class="item_title">Singapore - Malaysia<br><h6>Starting from INR 16990* only</h6></div>
 								<ul>
-									<li>1 person</li>
+									<li>1 person (Min. 4 Adults)</li>
 									<li>4 Night / 5 Days</li>
 									<li>3 star hotel</li>
 								</ul>
@@ -268,7 +497,7 @@
 									<i class="fa fa-star"></i>
 								</div>
 								<div class="item_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce fringilla lectus nec diam auctor, ut fringilla diam sagittis. Quisque vel est id justo faucibus dapibus id a nibh. Aenean suscipit consequat lacus, sit amet mollis nulla. Morbi sagittis orci id lacus convallis tempus eget sit amet metus.</div>
-								<div class="item_more_link"><a href="#">Read More</a></div>
+								<div class="item_more_link"><a href="Singapore.html">Read More</a></div>
 							</div>
 						</div>
 
@@ -277,10 +506,10 @@
 							<div class="item_image"><img src="images/top_4.jpg" alt=""></div>
 							<div class="item_content">
 								<div class="item_price"></div>
-								<div class="item_title">Dazzling Dubai<br><h6>Starting from INR 16413* only</h6></div>
+								<div class="item_title">Dazzling Dubai<br><h6>Starting from INR 16990* only</h6></div>
 								<ul>
-									<li>1 person</li>
-									<li>4 Night / 5 Days</li>
+									<li>1 person ( Min. 4 Adults )</li>
+									<li>5 Night / 6 Days</li>
 									<li>3 star hotel</li>
 								</ul>
 								<div class="rating rating_5" data-rating="5">
@@ -291,7 +520,7 @@
 									<i class="fa fa-star"></i>
 								</div>
 								<div class="item_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce fringilla lectus nec diam auctor, ut fringilla diam sagittis. Quisque vel est id justo faucibus dapibus id a nibh. Aenean suscipit consequat lacus, sit amet mollis nulla. Morbi sagittis orci id lacus convallis tempus eget sit amet metus.</div>
-								<div class="item_more_link"><a href="#">Read More</a></div>
+								<div class="item_more_link"><a href="Dubai.html">Read More</a></div>
 							</div>
 						</div>
 
@@ -354,9 +583,11 @@
 								<div class="logo_image"><img src="images/logo.png" alt=""></div>
 							</div>
 						</div>
-						<div class="footer_about_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer pulvinar sed mauris eget tincidunt. Sed lectus nulla, tempor vel eleifend quis, tempus rut rum metus. Pellentesque ultricies enim eu quam fermentum hendrerit.</div>
+						<div class="footer_about_text"><h6>Welcome greeting from Sakshi Travels International Pvt Ltd</h6>
+
+The trailblazing journey of Royal began with a pledge - "When you make a promise to your guests, honour it." A firm belief in honest and transparent deals, no hidden costs and no compromise on sightseeing -that's what makes Sakshi Travels the first choice of generations of guests. We strive for 100% Customer Satisfaction.  </div>
 						<div class="copyright"><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
+Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved  <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Jeevan / Sagar / Manoj</a>
 <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></div>
 					</div>
 				</div>
@@ -395,14 +626,13 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
 						<div class="footer_title">Tags</div>
 						<ul class="tags_content d-flex flex-row flex-wrap align-items-start justify-content-start">
 							<li class="tag"><a href="#">travel</a></li>
-							<li class="tag"><a href="#">summer</a></li>
-							<li class="tag"><a href="#">cruise</a></li>
-							<li class="tag"><a href="#">beach</a></li>
-							<li class="tag"><a href="#">offer</a></li>
-							<li class="tag"><a href="#">vacation</a></li>
-							<li class="tag"><a href="#">trip</a></li>
-							<li class="tag"><a href="#">city break</a></li>
-							<li class="tag"><a href="#">adventure</a></li>
+							<li class="tag"><a href="#">About Us</a></li>
+							<li class="tag"><a href="#">Trips</a></li>
+							<li class="tag"><a href="#">Activities</a></li>
+							<li class="tag"><a href="#">FAQ</a></li>
+							<li class="tag"><a href="#">Clients Review</a></li>
+							<li class="tag"><a href="#">Privacy Policy</a></li>
+							<li class="tag"><a href="#">Contact Us</a></li>
 						</ul>
 					</div>
 				</div>

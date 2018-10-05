@@ -269,7 +269,8 @@ section
 {
 	font-size: 48px;
 	font-weight: 100;
-	color: #FFFFFF;
+	color: red;
+
 }
 .home_breadcrumbs
 {
@@ -359,7 +360,8 @@ section
 .logo
 {
 	height: 100%;
-	padding-left: 72px;
+	
+	padding-left: 100px;
 }
 .logo div
 {
@@ -378,16 +380,18 @@ section
 	font-weight: 500;
 	color: #929292;
 	letter-spacing: 0.13em;
-	margin-top: 2px;
+	margin-top: -40px;
 	padding-left: 2px;
+
 }
 .logo_image
 {
 	position: absolute;
-	top: -34px;
+	top: -5px;
 	left: 41px;
 	width: 50px;
 	height: 41px;
+	padding-right: 23px;
 	-webkit-transition: all 400ms ease;
 	-moz-transition: all 400ms ease;
 	-ms-transition: all 400ms ease;
